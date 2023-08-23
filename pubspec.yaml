@@ -28,9 +28,10 @@ flutter:
   assets:
     - assets/audio/effects/
     - assets/images/
+    - assets/images/map_one.json
     - assets/images/effects/
     - assets/images/items/
-    - assets/images/sprite_sheets
-    - assets/images/decorations
+    - assets/images/sprite_sheets/
+    - assets/images/decorations/
 
 
