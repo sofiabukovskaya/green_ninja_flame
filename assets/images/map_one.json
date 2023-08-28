@@ -42,9 +42,32 @@
          "width":30,
          "x":0,
          "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":3,
+         "name":"Object Layer 1",
+         "objects":[
+                {
+                 "gid":121,
+                 "height":16,
+                 "id":5,
+                 "name":"old_man",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":168.507341455795,
+                 "y":281.352077475789
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
         }],
- "nextlayerid":2,
- "nextobjectid":1,
+ "nextlayerid":4,
+ "nextobjectid":6,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",
@@ -53,6 +76,10 @@
         {
          "firstgid":1,
          "source":"dungeon_tileset.json.tsj"
+        }, 
+        {
+         "firstgid":113,
+         "source":"old_man_tileset.json"
         }],
  "tilewidth":32,
  "type":"map",

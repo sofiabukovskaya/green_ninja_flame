@@ -8,7 +8,7 @@ class GreenNinjaPlayer extends SimplePlayer {
       : super(
           size: Vector2(Globals.playerSize, Globals.playerSize),
           position: position,
-          speed: 100,
+          speed: 200,
           life: 100,
           initDirection: Direction.down,
           animation:
