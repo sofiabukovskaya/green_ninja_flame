@@ -71,22 +71,28 @@ class OldManNpc extends SimpleNpc with TapGesture, AutomaticRandomMovement {
       this,
       zoom: 2,
       finish: () {
-        TalkDialog.show(gameRef.context, [
-          _speak(text: 'Hey wassup Green Ninja, are you lost?', isHero: false),
-          _speak(
-              text:
-                  'Hello Old Man, pleasure to seeing you. Do you know where the coin is?',
-              isHero: true),
-          _speak(text: 'Ah yes, Blue Ninja has the coin.', isHero: false),
-          _speak(text: 'Say less.', isHero: true)
-        ], logicalKeyboardKeysToNext: [
-          LogicalKeyboardKey.space,
-          LogicalKeyboardKey.enter,
-        ], onClose: () {
-          gameRef.camera.moveToPlayerAnimated(
-            zoom: 1,
-          );
-        });
+        TalkDialog.show(
+          gameRef.context,
+          [
+            _speak(
+                text: 'Hey wassup Green Ninja, are you lost?', isHero: false),
+            _speak(
+                text:
+                    'Hello Old Man, pleasure to seeing you. Do you know where the coin is?',
+                isHero: true),
+            _speak(text: 'Ah yes, Blue Ninja has the coin.', isHero: false),
+            _speak(text: 'Say less.', isHero: true)
+          ],
+          logicalKeyboardKeysToNext: [
+            LogicalKeyboardKey.space,
+            LogicalKeyboardKey.enter,
+          ],
+          onClose: () {
+            gameRef.camera.moveToPlayerAnimated(
+              zoom: 1,
+            );
+          },
+        );
       },
     );
   }

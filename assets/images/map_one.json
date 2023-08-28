@@ -59,6 +59,42 @@
                  "width":16,
                  "x":168.507341455795,
                  "y":281.352077475789
+                }, 
+                {
+                 "gid":149,
+                 "height":16,
+                 "id":6,
+                 "name":"dark_ninja",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":360.634801624492,
+                 "y":286.038113089659
+                }, 
+                {
+                 "gid":149,
+                 "height":16,
+                 "id":7,
+                 "name":"dark_ninja",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":391.875039050297,
+                 "y":306.344267416432
+                }, 
+                {
+                 "gid":149,
+                 "height":16,
+                 "id":8,
+                 "name":"dark_ninja",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":229.425804436114,
+                 "y":498.47172758513
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -67,7 +103,7 @@
          "y":0
         }],
  "nextlayerid":4,
- "nextobjectid":6,
+ "nextobjectid":9,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",
@@ -80,6 +116,10 @@
         {
          "firstgid":113,
          "source":"old_man_tileset.json"
+        }, 
+        {
+         "firstgid":141,
+         "source":"dark_ninja_tileset.tsj"
         }],
  "tilewidth":32,
  "type":"map",
