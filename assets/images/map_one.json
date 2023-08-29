@@ -143,6 +143,66 @@
                  "width":16,
                  "x":616.804748516089,
                  "y":485.975632614808
+                }, 
+                {
+                 "gid":203,
+                 "height":32,
+                 "id":14,
+                 "name":"fire",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":510.398000624805,
+                 "y":440.86722899094
+                }, 
+                {
+                 "gid":203,
+                 "height":32,
+                 "id":15,
+                 "name":"fire",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":680.657294595439,
+                 "y":326.840362386754
+                }, 
+                {
+                 "gid":203,
+                 "height":32,
+                 "id":16,
+                 "name":"fire",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":427.611371446423,
+                 "y":197.193377069666
+                }, 
+                {
+                 "gid":203,
+                 "height":32,
+                 "id":17,
+                 "name":"fire",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":288.592314901593,
+                 "y":364.328647297719
+                }, 
+                {
+                 "gid":203,
+                 "height":32,
+                 "id":18,
+                 "name":"fire",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":99.5888784754764,
+                 "y":543.960012496095
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -151,7 +211,7 @@
          "y":0
         }],
  "nextlayerid":6,
- "nextobjectid":14,
+ "nextobjectid":19,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",
@@ -176,6 +236,10 @@
         {
          "firstgid":174,
          "source":"blue_ninja_tileset.json"
+        }, 
+        {
+         "firstgid":202,
+         "source":"fire_tileset.tsj"
         }],
  "tilewidth":32,
  "type":"map",

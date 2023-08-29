@@ -6,8 +6,10 @@ import 'package:green_ninja_flame/constants/animation_configs.dart';
 import 'package:green_ninja_flame/constants/collision_configs.dart';
 import 'package:green_ninja_flame/constants/globals.dart';
 import 'package:green_ninja_flame/enums/attack_type.dart';
+import 'package:green_ninja_flame/screens/game_over_screen.dart';
 
-class GreenNinjaPlayer extends SimplePlayer with ObjectCollision, UseBarLife {
+class GreenNinjaPlayer extends SimplePlayer
+    with ObjectCollision, UseBarLife, Lighting {
   final double _damage = 10;
 
   GreenNinjaPlayer(
@@ -29,6 +31,13 @@ class GreenNinjaPlayer extends SimplePlayer with ObjectCollision, UseBarLife {
     setupCollision(
       CollisionConfigs.playerCollisionConfig(),
     );
+    setupLighting(
+      LightingConfig(
+        radius: width * 2,
+        blurBorder: width * 2,
+        color: Colors.yellow.withOpacity(0.1),
+      ),
+    );
   }
 
   @override
@@ -48,6 +57,10 @@ class GreenNinjaPlayer extends SimplePlayer with ObjectCollision, UseBarLife {
     FlameAudio.play(Globals.gameOverSound);
     gameRef.camera.shake(intensity: 4);
     removeFromParent();
+    gameRef.pauseEngine();
+    gameRef.overlayManager.add(
+      GameOverScreen.id,
+    );
     super.die();
   }
 

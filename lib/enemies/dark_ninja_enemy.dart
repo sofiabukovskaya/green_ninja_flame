@@ -1,9 +1,12 @@
+import 'dart:math';
+
 import 'package:bonfire/bonfire.dart';
 import 'package:flame_audio/flame_audio.dart';
 import 'package:flutter/material.dart';
 import 'package:green_ninja_flame/constants/animation_configs.dart';
 import 'package:green_ninja_flame/constants/globals.dart';
 import 'package:green_ninja_flame/constants/collision_configs.dart';
+import 'package:green_ninja_flame/decorations/medipack.dart';
 
 class DarkNinjaEnemy extends SimpleEnemy
     with AutomaticRandomMovement, UseBarLife, ObjectCollision {
@@ -44,6 +47,13 @@ class DarkNinjaEnemy extends SimpleEnemy
   void die() {
     gameRef.camera.shake(intensity: 4);
     removeFromParent();
+
+    bool dropPickup = Random().nextBool();
+    if (dropPickup) {
+      gameRef.add(
+        Medipack(position: position),
+      );
+    }
     super.die();
   }
 
