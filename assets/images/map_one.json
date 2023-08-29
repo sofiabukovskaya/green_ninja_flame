@@ -95,6 +95,54 @@
                  "width":16,
                  "x":229.425804436114,
                  "y":498.47172758513
+                }, 
+                {
+                 "gid":170,
+                 "height":50,
+                 "id":9,
+                 "name":"demon",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":50,
+                 "x":582.622617931896,
+                 "y":207.755388940956
+                }, 
+                {
+                 "gid":170,
+                 "height":50,
+                 "id":10,
+                 "name":"demon",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":50,
+                 "x":465.47172758513,
+                 "y":560.770071852546
+                }, 
+                {
+                 "gid":170,
+                 "height":50,
+                 "id":11,
+                 "name":"demon",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":50,
+                 "x":545.134333020931,
+                 "y":338.964386129335
+                }, 
+                {
+                 "gid":182,
+                 "height":16,
+                 "id":13,
+                 "name":"blue_ninja",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":616.804748516089,
+                 "y":485.975632614808
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -102,8 +150,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":4,
- "nextobjectid":9,
+ "nextlayerid":6,
+ "nextobjectid":14,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",
@@ -120,6 +168,14 @@
         {
          "firstgid":141,
          "source":"dark_ninja_tileset.tsj"
+        }, 
+        {
+         "firstgid":169,
+         "source":"demon_cyclop_idle_tileset.tsj"
+        }, 
+        {
+         "firstgid":174,
+         "source":"blue_ninja_tileset.json"
         }],
  "tilewidth":32,
  "type":"map",

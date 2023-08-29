@@ -5,16 +5,16 @@ import 'package:green_ninja_flame/constants/animation_configs.dart';
 import 'package:green_ninja_flame/constants/globals.dart';
 import 'package:green_ninja_flame/constants/collision_configs.dart';
 
-class DarkNinjaEnemy extends SimpleEnemy
+class BlueNinjaEnemy extends SimpleEnemy
     with AutomaticRandomMovement, UseBarLife, ObjectCollision {
   bool _seePlayerToAttackMelee = false;
-  final double _damage = 10;
+  final double _damage = 20;
 
-  DarkNinjaEnemy({required Vector2 position, required SpriteSheet spriteSheet})
+  BlueNinjaEnemy({required Vector2 position, required SpriteSheet spriteSheet})
       : super(
           size: Vector2(Globals.playerSize, Globals.playerSize),
           position: position,
-          speed: 100,
+          speed: 150,
           life: 100,
           initDirection: Direction.down,
           animation:
@@ -76,7 +76,7 @@ class DarkNinjaEnemy extends SimpleEnemy
             if (!player.isDead) {
               simpleAttackRange(
                 damage: _damage,
-                animationRight: AnimationConfigs.shurikenAnimation(),
+                animationRight: AnimationConfigs.bigEnergyBallAnimation(),
                 animationDestroy: AnimationConfigs.smokeAnimation(),
                 size: size,
                 collision: CollisionConfigs.projectileCollisionConfig(

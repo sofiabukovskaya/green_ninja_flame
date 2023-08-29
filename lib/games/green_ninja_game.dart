@@ -2,10 +2,13 @@ import 'package:bonfire/bonfire.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:green_ninja_flame/constants/globals.dart';
+import 'package:green_ninja_flame/enemies/blue_ninja_enemy.dart';
 import 'package:green_ninja_flame/enemies/dark_ninja_enemy.dart';
+import 'package:green_ninja_flame/enemies/demon_enemy.dart';
 import 'package:green_ninja_flame/enums/attack_type.dart';
 import 'package:green_ninja_flame/npcs/old_man.dart';
 import 'package:green_ninja_flame/players/green_ninja_player.dart';
+import 'package:green_ninja_flame/sprite_sheets/blue_ninja_sprite_sheet.dart';
 import 'package:green_ninja_flame/sprite_sheets/dark_ninja_sprite_sheet.dart';
 import 'package:green_ninja_flame/sprite_sheets/green_ninja_sprite_sheet.dart';
 import 'package:green_ninja_flame/sprite_sheets/old_man_sprite_sheet.dart';
@@ -26,8 +29,8 @@ class _GreenNinjaGameState extends State<GreenNinjaGame> {
         keyboardConfig: KeyboardConfig(
           keyboardDirectionalType: KeyboardDirectionalType.wasdAndArrows,
           acceptedKeys: [
-            LogicalKeyboardKey.numpadEnter,
-            LogicalKeyboardKey.numpad0,
+            LogicalKeyboardKey.digit1,
+            LogicalKeyboardKey.digit2,
           ],
         ),
         actions: [
@@ -69,6 +72,13 @@ class _GreenNinjaGameState extends State<GreenNinjaGame> {
           'dark_ninja': (properties) => DarkNinjaEnemy(
                 position: properties.position,
                 spriteSheet: DarkNinjaSpriteSheet.spriteSheet,
+              ),
+          'blue_ninja': (properties) => BlueNinjaEnemy(
+                position: properties.position,
+                spriteSheet: BlueNinjaSpriteSheet.spriteSheet,
+              ),
+          'demon': (properties) => DemonEnemy(
+                position: properties.position,
               ),
         },
       ),
